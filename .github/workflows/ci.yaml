@@ -9,7 +9,7 @@ on:
 jobs:
   lint-test:
     # name: Lint and Test Charts
-    runs-on: ubuntu-24.04
+    runs-on: cronos
     permissions:
       contents: read
     steps:
@@ -72,7 +72,7 @@ jobs:
 
   check-codeowners-maintainers:
     name: Check CODEOWNERS & MAINTAINERS.md
-    runs-on: ubuntu-24.04
+    runs-on: cronos
     permissions:
       contents: read
     steps:
@@ -97,7 +97,7 @@ jobs:
 
   super-linter:
     name: Lint Code Base
-    runs-on: ubuntu-24.04
+    runs-on: cronos
     permissions:
       contents: read
     steps:
@@ -130,7 +130,7 @@ jobs:
 
   renovate-auto-merge:
     name: Auto-approve PRs from Renovate
-    runs-on: ubuntu-24.04
+    runs-on: cronos
     needs:
       - lint-test
       - check-codeowners-maintainers
