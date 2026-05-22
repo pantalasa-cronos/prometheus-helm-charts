@@ -35,3 +35,4 @@ We'd love to have you contribute! Please refer to our [contribution guidelines](
 
 ![Release Charts](https://github.com/prometheus-community/helm-charts/actions/workflows/release.yaml/badge.svg?branch=main)
 
+<!-- cronos-trigger: 2026-05-22T02:14:15Z -->
